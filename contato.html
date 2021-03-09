@@ -3,13 +3,14 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Bikcraft - Portfólio</title>
+	<title>Bikcraft - Contato</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/grid.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/portfolio.css">
+	<link rel="stylesheet" href="css/contato.css">
 	<link rel="stylesheet" href="css/responsivo.css">
+	<script>document.documentElement.classList.add("js");</script>
 </head>
 
 <body>
@@ -23,41 +24,56 @@
 				<ul>
 					<li><a href="sobre.html">Sobre</a></li>
 					<li><a href="produtos.html">Produtos</a></li>
-					<li><a href="portfolio.html" class="menu_ativo">Portfólio</a></li>
-					<li><a href="contato.html">Contato</a></li>
-
+					<li><a href="portfolio.html">Portfólio</a></li>
+					<li><a href="contato.html" class="menu_ativo">Contato</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 
-	<section class="introducao-interna interna_portfolio">
+	<section class="introducao-interna interna_contato">
 		<div class="container">
-			<h1>Portfólio</h1>
-			<p>conheça os projetos que amamos mostrar</p>
+			<h1 data-anime="400" class="fadeInDown" >Contato</h1>
+			<p data-anime="800" class="fadeInDown">tire suas dúvidas com a gente</p>
 		</div>
 	</section>
 
-	<section class="container">
-		<blockquote class="quote_clientes">
-			<p>
-				“Pedalar sempre foi a minha paixão, o que o pessoal da Bikcraft fez foi intensificar o meu amor por esta
-				atividade. Recomendo à todos que amo.”
-			</p>
-			<cite>Jhony Rato</cite>
-		</blockquote>
-	</section>
 
-	<section class="portfolio">
-		<div class="container">
-			<ul class="portfolio_lista">
-				<li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta Retrô"></li>
-				<li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio"></li>
-				<li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bicicleta Esporte"></li>
+
+	<section class="contato container fadeInDown" data-anime="1200" >
+		<form id="form_orcamento" class="grid-8 contato_form">
+			<label for="nome">Nome</label>
+			<input type="text" id="nome">
+			<label for="email">E-mail</label>
+			<input type="text" id="email">
+			<label for="telefone">Telfone</label>
+			<input type="text" id="telefone">
+			<label for="espec">Especificações </label>
+			<textarea id="espec"> </textarea>
+			<button type="submit" class="btn btn-preto">Enviar</button>
+		</form>
+
+		<div class="contato_dados grid-8">
+			<h3>Dados</h3>
+			<span>+55 21 9999-9999</span>
+			<span>contato@bikcraft.com</span>
+			<span>Rua Ali Perto - Botafogo</span>
+			<span>Rio de Janeiro - RJ - Brasil</span>
+			<h3>Redes sociais</h3>
+			<ul>
+				<li><a href="http://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.svg"></a>
+				</li>
+				<li><a href="http://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.svg"></a></li>
+				<li><a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.svg"></a>
+				</li>
 			</ul>
 		</div>
 	</section>
 
+	<section class="container contato_mapa">
+		<a href="https://www.google.com.br/" target="_blank" class="grid-16"> <img src="img/endereco-bikcraft.jpg"
+				alt="Endereco da Bikcraft"></a>
+	</section>
 
 	<section class="quebra">
 		<blockquote class="quote-externo container">
@@ -108,6 +124,8 @@
 		</div>
 	</footer>
 
+	<script src="./js/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
